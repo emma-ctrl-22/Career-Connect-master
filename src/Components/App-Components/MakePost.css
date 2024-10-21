@@ -1,0 +1,166 @@
+.post-box {
+  height: 460px;
+  width: 600px;
+  background: #1b1b1b;
+  z-index: 9999;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.makepost {
+  height: 440px;
+  width: 580px;
+  margin: auto;
+  overflow-y: auto; /* Enables scrolling */
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.userprofile1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.person-details {
+  flex-direction: column;
+  display: flex;
+}
+
+.person-details h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+}
+
+.person-details p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+  opacity: 0.5;
+}
+
+.close-button {
+  margin-top: 0;
+}
+
+.user-profile .profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.post-input {
+  width: 580px;
+  height: 300px;
+  background: rgba(41, 42, 44, 0.7);
+  border: none;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Poppins;
+  font-size: 15px;
+  border-width: 0.2px;
+  resize: none; /* Optional: Prevents resizing, remove if you want the user to be able to resize */
+  vertical-align: top;
+  outline: none; /* Keeps the removal of outline when focused */
+  padding-top: 5px;
+}
+
+.post-input:focus {
+  border-color: transparent; /* Keeps the border color transparent when focused */
+}
+
+.eib {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+
+.emoji-image svg {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.emoji-image {
+  display: flex;
+  flex-direction: row;
+  width: 60px;
+  justify-content: space-between;
+}
+
+.post-button {
+  height: 40px;
+  width: 100px;
+  color: white;
+  font-family: Poppins;
+  border-radius: 25px;
+  border: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: #ad8547;
+  font-size: 15px;
+}
+
+/* Add this rule to your CSS file */
+
+.emoji-picker-react {
+  z-index: 9999 !important; /* Adjust the z-index as needed, and make sure it's higher than the dialog's z-index */
+}
+
+.image-upload {
+  /* Style for the image upload area */
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.preview-img {
+  /* Style for the image preview */
+  max-width: 100%; /* or other styling as needed */
+  border-radius: 4px; /* optional, for styled corners */
+  margin-top: 10px; /* space above the image */
+}
+
+.makepost {
+  /* ... existing styles ... */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Add scroll if content overflows vertically */
+}
+
+.post-content {
+  /* This is the new container for the text area and the image preview */
+  /* Adjust padding as needed */
+  border: none; /* Optional border */
+  border-radius: 4px; /* Optional rounded corners */
+  margin-bottom: 16px; /* Space before the buttons */
+  background: rgba(41, 42, 44, 0.7); /* Optional background color */
+  width: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.image-preview {
+  width: 100%; /* Full width of the container */
+  min-height: 50px; /* Minimum height to ensure the area is visible even without content */
+  max-height: 200px; /* Set a max-height to limit the container's size */
+  overflow-y: auto; /* Allows vertical scrolling within the container */
+  overflow-x: auto; /* Prevents horizontal scrolling */
+  resize: vertical; /* Allows the container to be resized vertically */
+}
+
+/* Additional styles for the preview-img, emoji-image, and post-button */
+.preview-img {
+  width: 100%; /* Scale the image to match the container's width */
+  height: auto; /* Maintain the image's aspect ratio */
+}

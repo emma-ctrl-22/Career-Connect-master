@@ -1,0 +1,223 @@
+.chatss {
+  display: grid;
+  grid-template-columns: 13% 87%; /* 13% for Sidepane, 87% for Menubar and page-content */
+  grid-template-rows: 82px calc(100vh - 82px); /* 82px for Menubar, remaining for page-content */
+}
+
+.page-content1 {
+  grid-column: 2; /* Span across the second column */
+  grid-row: 2; /* Span across the second row */
+  background: #1b1b1b;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.chatList {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-chat {
+  width: 80%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatHeader {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  height: 8%;
+  background: rgba(41, 42, 44, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.chatHeaderText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.chatHeaderText h3 {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 100;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.chatHeaderText p {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 100;
+  color: #ad8547;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.null-prompt {
+  font-family: Poppins;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.chat-container {
+  width: 100%;
+  height: 85%;
+  overflow: auto;
+}
+
+.chatInput {
+  width: 100%;
+  height: 8%;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.chatInputcnt {
+  width: 80%;
+  height: 80%;
+  border-radius: 25px;
+  background: transparent;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: none;
+  outline: none;
+  font-family: Poppins;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.input-wrapper {
+  width: 80%;
+  height: 80%;
+  border-radius: 25px;
+  background: rgba(41, 42, 44, 0.7);
+  margin-top: auto;
+  margin-bottom: auto;
+  border: none;
+  outline: none;
+  font-family: Poppins;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  padding-bottom: 0;
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-actions {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.send-button {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+}
+
+.senderMessage {
+  margin-left: auto;
+  flex-direction: row-reverse;
+  margin-right: 20px;
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 40%;
+}
+
+.receiverMessage {
+  margin-right: auto;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 40%;
+}
+
+.messageContent {
+  background: rgba(41, 42, 44, 0.7);
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-right: 20px;
+  max-width: 100%;
+}
+
+.messageContent1 {
+  background: #ad8547;
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-left: 20px;
+  max-width: 100%;
+}
+
+.actual-message {
+  color: white;
+  font-size: 13px;
+  font-family: Poppins;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 10;
+  padding: 10px;
+}
+
+.actual-message1 {
+  color: white;
+  font-size: 13px;
+  font-family: Poppins;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 10;
+  padding: 10px;
+}
+
+.time {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-family: Poppins;
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding: 10px;
+  text-align: right;
+}
+
+.time1 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-family: Poppins;
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+
+.messageItem .profile-image{
+  height: 50px;
+  width: 50px;
+}
